@@ -1,0 +1,16 @@
+PID,Type,Size,Parent,Distance,AngleH,AngleV,LevelID,Planet Name,Texture ID --Type: 0 = sun, 1 = planet, 2 = moon
+0,0,52,none,0,0,0,0,Solar,0
+1,1,8,Solar,215,14,0,1,Thetas,1
+2,1,8,Solar,325,3,0,2,Omicron 5,2
+3,1,8,Solar,475,2,0,3,Kathis,1
+4,3,8,Solar,625,17,0,4,Metebelis 3,4
+5,1,8,Solar,835,17,0,5,Draxus,2
+6,1,16,Solar,1021,86,0,6,Scaro,2
+7,3,24,Solar,1241,42,0,7,Azure,1
+8,3,16,Solar,1462,16,0,8,Bel,4
+9,1,8,Solar,1601,2,0,9,Magus,5
+10,1,8,Solar,1820,13,0,10,Aridius,4 
+11,1,8,Solar,2002,2,0,11,Anathemam,1
+0,2,4,Scaro,75,20,0,0,Moi,3
+0,2,2,Scaro,45,25,0,0,Sudo,3
+0,2,1,Thetas,45,25,0,0,Sudo,3

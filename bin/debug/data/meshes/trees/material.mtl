@@ -1,0 +1,4 @@
+newmtl trunk
+map_Kd trunk.dds
+newmtl leaves
+map_Kd leaves.dds
