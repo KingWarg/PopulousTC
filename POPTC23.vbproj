@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A7D3F0F-F863-4ED4-81AF-081C49716674}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PopTC.My.MyApplication</StartupObject>
+    <RootNamespace>PopTC</RootNamespace>
+    <AssemblyName>PopTC</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationIcon>Populous.ico</ApplicationIcon>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PopTC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PopTC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dispatcher, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Dispatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="irrKlang.NET2.0">
+      <HintPath>bin\Debug\irrKlang.NET2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="MTV3D65">
+      <HintPath>bin\Debug\MTV3D65.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleSock">
+      <HintPath>bin\Debug\SimpleSock.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Effects\AtmosphereManager.vb" />
+    <Compile Include="Effects\CamEffects.vb" />
+    <Compile Include="Effects\cDirectionalLight.vb" />
+    <Compile Include="Effects\Weather\cWeatherMgr.vb" />
+    <Compile Include="Effects\Weather\cWeatherSystem.vb" />
+    <Compile Include="Engine\cWorldView.vb" />
+    <Compile Include="Engine\SaveGame\cSaveGame.vb" />
+    <Compile Include="Engine\Sound\cSound.vb" />
+    <Compile Include="Engine\Sound\cSoundMgr.vb" />
+    <Compile Include="Entities\Objects\cGrass.vb" />
+    <Compile Include="Effects\RandomCreatures\cCreatures.vb" />
+    <Compile Include="Effects\RandomCreatures\cFireflies.vb" />
+    <Compile Include="Effects\Sun-Moon.vb" />
+    <Compile Include="Engine\Chat\cChatter.vb" />
+    <Compile Include="Engine\Computer AI\clsComputerPlayers.vb" />
+    <Compile Include="Engine\Input\TextEventInfo.vb" />
+    <Compile Include="Engine\Game Menus\mMultiplayerMenu.vb" />
+    <Compile Include="Engine\modCamera.vb" />
+    <Compile Include="Engine\Game Menus\mLevelsSelect.vb" />
+    <Compile Include="Engine\Game Menus\mMainMenu.vb" />
+    <Compile Include="Engine\modAnimation.vb" />
+    <Compile Include="Engine\Network\cNetwork.vb" />
+    <Compile Include="Engine\PathEngine\PathEngine.vb" />
+    <Compile Include="Engine\modWorld.vb" />
+    <Compile Include="Engine\User\cUser.vb" />
+    <Compile Include="Engine\User\cUserManager.vb" />
+    <Compile Include="Entities\Buildings\cBuilding.vb" />
+    <Compile Include="Entities\Objects\cObject.vb" />
+    <Compile Include="Entities\Spells\cAoDMgr.vb" />
+    <Compile Include="Entities\Units\modCombat.vb" />
+    <Compile Include="Entities\Spells\cAOD.vb" />
+    <Compile Include="Entities\Units\cUnitMgr.vb" />
+    <Compile Include="Entities\Units\cWildman.vb" />
+    <Compile Include="Entities\Units\modWildmen.vb" />
+    <Compile Include="Entities\Objects\cFireBall.vb" />
+    <Compile Include="Entities\Objects\cGrasses.vb" />
+    <Compile Include="Entities\Objects\cObjectMgr.vb" />
+    <Compile Include="Entities\Objects\cStoneHead.vb" />
+    <Compile Include="Entities\Objects\cTree.vb" />
+    <Compile Include="Entities\Objects\cWoodPile.vb" />
+    <Compile Include="Entities\Spells\cSpell.vb" />
+    <Compile Include="Entities\Spells\cSpellMgr.vb" />
+    <Compile Include="Entities\Spells\cSubSpell.vb" />
+    <Compile Include="Entities\Vehicles\cVehicle.vb" />
+    <Compile Include="Entities\Vehicles\cVehicleMgr.vb" />
+    <Compile Include="GUI\Events\cEvent.vb" />
+    <Compile Include="GUI\Events\cEventManager.vb" />
+    <Compile Include="GUI\Messages\cGUIMsg.vb" />
+    <Compile Include="GUI\Messages\cGUIMsgHandler.vb" />
+    <Compile Include="GUI\modQuickPanel.vb" />
+    <Compile Include="Debugger\frmDebug.Designer.vb">
+      <DependentUpon>frmDebug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Debugger\frmDebug.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entities\Buildings\cBuildingMgr.vb" />
+    <Compile Include="Landscape\cZakSky.vb" />
+    <Compile Include="Landscape\Lavas\cLava.vb" />
+    <Compile Include="Landscape\Lavas\cLavaMgr.vb" />
+    <Compile Include="Landscape\Water\cWater.vb" />
+    <Compile Include="Misc\cCRC32.vb" />
+    <Compile Include="Misc\KoenLibNet.vb" />
+    <Compile Include="Misc\modErrorHandler.vb" />
+    <Compile Include="Debugger\cDebug.vb" />
+    <Compile Include="Engine\modEngine.vb" />
+    <Compile Include="GUI\modGUI.vb" />
+    <Compile Include="Engine\Input\modInput.vb" />
+    <Compile Include="Landscape\modLandscape.vb" />
+    <Compile Include="Engine\modMain.vb" />
+    <Compile Include="Misc\modMath.vb" />
+    <Compile Include="Misc\modMisc.vb" />
+    <Compile Include="modResources.vb" />
+    <Compile Include="Entities\Units\modUnits.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GUI\modPanelMenu.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Debugger\frmDebug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDebug.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Populous.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
